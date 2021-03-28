@@ -115,7 +115,7 @@ $$\int_\Omega\left(\frac{\partial}{\partial t}\rho cT\cdot v - \mathbf F\cdot\na
 ### Galerkin's method
 
 * Discretizing the variational form gives us **Galerkin**-type methods.
-* Idea: we can't describe $T$ to arbitrary resolution. 
+* Idea: we can't describe $T$ to arbitrary resolution.
 Instead, pick some *basis* functions
 $$\\{\phi_1, \ldots, \phi_N\\}$$
 and guess that
@@ -136,6 +136,18 @@ $$T \approx T_1(t)\phi_1(x) + \ldots + T_N(t)\phi_N(x).$$
 * Great, so how do you pick the basis?
 * Fourier basis $\Rightarrow$ spectral methods
 * Hat functions $\Rightarrow$ finite element method
+
+----
+
+Ex: spherical harmonics, a common choice of basis for global climate models.
+
+![spherical-harmonics](https://upload.wikimedia.org/wikipedia/commons/1/12/Rotating_spherical_harmonics.gif)
+
+----
+
+Ex: a piecewise linear function; the FEM uses piecewise linear or polynomial functions on triangular meshes
+
+![piecewise-linear](https://upload.wikimedia.org/wikipedia/commons/6/6d/Piecewise_linear_function2D.svg)
 
 ----
 
