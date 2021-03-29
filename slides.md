@@ -56,6 +56,15 @@ $$\frac{\mathrm d}{\mathrm dt}\int_\omega\rho cT\hspace{2pt}\mathrm dx + \int_{\
 
 ----
 
+![cats](cats.jpg.png)
+
+Red: $\mathbf F$; black: $\mathbf n$.
+Things to note.
+(1) $|\mathbf F|$ is larger in the illuminated patch.
+(2) where does $\mathbf n$ align with $\mathbf F$?
+
+----
+
 ### Heat flux
 
 * But what's the heat flux?
