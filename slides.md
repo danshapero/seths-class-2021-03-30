@@ -69,7 +69,7 @@ $$\mathbf F = \rho cT\mathbf u - k\nabla T.$$
 ### PDE
 
 * Remember the divergence theorem?
-$$\int_{\partial\omega}\mathbf F\cdot\mathbf n\hspace{2pt}\mathrm ds = \int_\omega\nabla\cdot\mathbf F\hspace{2pt}\mathrm ds$$
+$$\int_{\partial\omega}\mathbf F\cdot\mathbf n\hspace{2pt}\mathrm ds = \int_\omega\nabla\cdot\mathbf F\hspace{2pt}\mathrm dx$$
 * Put all this together and you get (for all $\omega$):
 $$\int_\omega\left(\frac{\partial}{\partial t}\rho cT + \nabla\cdot\mathbf F - Q\right)\mathrm dx = 0$$
 * $\omega$ was arbitrary $\Rightarrow$ integrand = 0 everywhere.
@@ -153,12 +153,25 @@ Ex: a piecewise linear function; the FEM uses piecewise linear or polynomial fun
 
 ### But srsly why
 
-| method | accuracy | shape   | jumps    | coding
-|--------|----------|---------|----------|-----
-| FDM    | high     | simple  | no       | easy
-| FEM    | high     | complex | fine     | hard
-| SM     | high+    | simple  | lolno    | medium
-| FVM    | low      | complex | yes      | hard
+|                | FDM    | FVM     | SM      | FEM
+|----------------|--------|---------|---------|----
+| **accuracy**   | high   | low     | high+   | high
+| **shape**      | simple | complex | simple  | complex
+| **jumps**      | no     | yes     | no      | sorta
+| **coding**     | easy   | hard    | medium  | hard
+| **adaptivity** | no     | yes     | no      | yes
+
+----
+
+Demonstration time!
+
+----
+
+### Recap
+
+* To discretize a PDE with FDM, the inputs have to be nice.
+They often aren't.
+* You could also use variational forms and these lend themselves to other cool methods.
 
 ---
 
@@ -253,4 +266,4 @@ We can add more interesting effects too!
 * Strain heating:
 $$q = \boldsymbol\tau\cdot\boldsymbol{\dot\varepsilon}$$
 * Temperature-dependent viscosity:
-$$\mu \propto \exp(-Q / RT)$$
+$$\mu \propto \exp(-T / \Delta T)$$
