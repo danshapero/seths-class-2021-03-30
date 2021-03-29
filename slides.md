@@ -56,7 +56,7 @@ $$\frac{\mathrm d}{\mathrm dt}\int_\omega\rho cT\hspace{2pt}\mathrm dx + \int_{\
 
 ----
 
-![cats](cats.jpg.png)
+![cats](cats.png)
 
 Red: $\mathbf F$; black: $\mathbf n$.
 Things to note.
@@ -77,7 +77,7 @@ $$\mathbf F = \rho cT\mathbf u - k\nabla T.$$
 
 ### PDE
 
-* Remember the divergence theorem?
+* Remember the [divergence theorem](https://youtu.be/UOG3mOhv5Xo)?
 $$\int_{\partial\omega}\mathbf F\cdot\mathbf n\hspace{2pt}\mathrm ds = \int_\omega\nabla\cdot\mathbf F\hspace{2pt}\mathrm dx$$
 * Put all this together and you get (for all $\omega$):
 $$\int_\omega\left(\frac{\partial}{\partial t}\rho cT + \nabla\cdot\mathbf F - Q\right)\mathrm dx = 0$$
