@@ -48,6 +48,14 @@ $$\frac{\mathrm d}{\mathrm dt}\int_\Omega E\hspace{2pt}\mathrm dx = 0.$$
 
 ----
 
+![](https://upload.wikimedia.org/wikipedia/commons/f/f1/Divergence_theorem_2_-_volume_partition.png)
+
+----
+
+![](https://upload.wikimedia.org/wikipedia/commons/6/60/Divergence_theorem_1_-_split_volume.png)
+
+----
+
 ### Heat transfer
 
 $\mathbf{F}$ = heat flux; it's a vector! $Q$ = body heating
@@ -277,6 +285,17 @@ Glacier flow is a great way to see strain rate!
 * If the fluid is incompressible, then $\nabla\cdot\mathbf u = 0$.
 * For ice flow, the inertial parts are tiny, shear stress and gravity are way bigger.
 * And ice has that weird constitutive law!
+
+----
+
+### Other forms
+
+* The Navier-Stokes equations has the same alternative forms as the heat equation.
+* Ex, the variational form:
+$$\begin{align}
+& \int_\Omega\left(\frac{\partial}{\partial t}\rho\mathbf u\cdot\mathbf v - (\rho\mathbf u\mathbf u^\top - \boldsymbol\tau + p\mathbf I)\cdot\nabla \mathbf v\right)\hspace{2pt}\mathrm dx \\\\
+& \qquad = \int_\Omega \mathbf f\cdot\mathbf v\hspace{2pt}\mathrm dx
+\end{align}$$
 
 ---
 
