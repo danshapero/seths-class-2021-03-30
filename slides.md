@@ -75,10 +75,32 @@ $$\mathbf F = \rho cT\mathbf u - k\nabla T.$$
 
 ----
 
+### Interlude: divergence
+
+* The *divergence* of a vector field $\mathbf F$ is the scalar
+$$\nabla\cdot \mathbf F = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}.$$
+* The divergence of a vector field measures how much it expands or contracts space.
+
+----
+
+### Interlude: divergence
+
+* Take every point $\boldsymbol\xi$ in a control volume $\omega$ and solve the ODE
+$$\dot{\mathbf x} = \mathbf F(\mathbf x), \quad \mathbf x(0) = \boldsymbol\xi$$
+for time $\delta t$ to get a new set $\omega_{\delta t}$.
+* Divergence tells you the rate of change of area:
+$$\text{area}(\omega_{\delta t}) = \text{area}(\omega) + \delta t\int_\omega\nabla\cdot\mathbf F\hspace{2pt}\mathrm dx.$$
+
+----
+
+### The [divergence theorem](https://youtu.be/UOG3mOhv5Xo)
+
+$$\int_\omega\nabla\cdot\mathbf F\hspace{2pt}\mathrm dx = \int_{\partial\omega}\mathbf F\cdot\mathbf n\hspace{2pt}\mathrm ds$$
+
+----
+
 ### PDE
 
-* Remember the [divergence theorem](https://youtu.be/UOG3mOhv5Xo)?
-$$\int_{\partial\omega}\mathbf F\cdot\mathbf n\hspace{2pt}\mathrm ds = \int_\omega\nabla\cdot\mathbf F\hspace{2pt}\mathrm dx$$
 * Put all this together and you get (for all $\omega$):
 $$\int_\omega\left(\frac{\partial}{\partial t}\rho cT + \nabla\cdot\mathbf F - Q\right)\mathrm dx = 0$$
 * $\omega$ was arbitrary $\Rightarrow$ integrand = 0 everywhere.
