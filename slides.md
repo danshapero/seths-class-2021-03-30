@@ -1,5 +1,5 @@
 ---
-title: icepack
+title: Continuum mechanics
 theme: white
 ---
 
@@ -266,10 +266,16 @@ $$\begin{align}
 
 ----
 
+<img src="IMG_20190721_113345925.jpg" width="65%">
+
+Glacier flow is a great way to see strain rate!
+
+----
+
 ### Ice flow
 
 * If the fluid is incompressible, then $\nabla\cdot\mathbf u = 0$.
-* For ice flow, the inertial parts are tiny -- just internal stress balancing gravity.
+* For ice flow, the inertial parts are tiny, shear stress and gravity are way bigger.
 * And ice has that weird constitutive law!
 
 ---
