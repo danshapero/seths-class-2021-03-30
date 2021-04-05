@@ -1,4 +1,4 @@
-FROM icepack/firedrake-python3.8:0.5.0
+FROM icepack/firedrake-python3.8:0.5.1
 
 RUN pip3 install jupyter jupyterlab tqdm
 RUN rm -rf gmsh-4.5.6* firedrake-install* install-options package-branches
